@@ -36,10 +36,10 @@ function createWindow () {
                   //make sure we got state object of spotify
                   if(spotifyInstance){
                     spotify.getTrack(function(err, current_spotify_track){
-
+                  
                       //make sure we got some track from spotify
                       if(current_spotify_track && current_spotify_track.id){                          
-                          if(current_spotify_track.name == ("Advertisement")) {
+                          if(current_spotify_track.name == ("Advertisement") || current_spotify_track.artist == '') {
                             spotify.muteVolume();
                           } else {
                             spotify.unmuteVolume();
@@ -104,9 +104,8 @@ app.on('window-all-closed', function () {
 app.on('activate', function () {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) {
-    MonitorSpotify()
-  }
+
+  
 })
 
 // In this file you can include the rest of your app's specific main process
