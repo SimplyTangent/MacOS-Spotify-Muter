@@ -18,5 +18,13 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^8.2.0"
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.1.8",
+    "electron-oauth-helper": "^5.0.3",
+    "electron-oauth2": "^3.0.0",
+    "performance-now": "^2.1.0",
+    "spotify-node-applescript": "^1.1.1",
+    "spotify-web-api-node": "^4.0.0"
   }
 }
