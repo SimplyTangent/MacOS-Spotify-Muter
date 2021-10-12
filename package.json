@@ -17,7 +17,7 @@
   "author": "Shashank Kota",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^8.2.0"
+    "electron": "^11.5.0"
   },
   "dependencies": {
     "electron-json-storage": "^4.1.8",
